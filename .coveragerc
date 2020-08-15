@@ -1,0 +1,9 @@
+[run]
+source =
+    django_boilerplate
+
+omit =
+    **/migrations/**
+    django_boilerplate/asgi.py
+    django_boilerplate/settings.py
+    django_boilerplate/wsgi.py
