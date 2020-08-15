@@ -5,6 +5,14 @@
 # Django Boilerplate
 This is a django boilerplate project, which will provide basic REST API, CI/CD setup.
 
+## Use this template
+* Change docker image name in [.github/workflows/docker-image.yml](.github/workflows/docker-image.yml)
+
+```repository: ${{ github.repository }}/django``` --> ```repository: ${{ github.repository }}/<image-name>```
+
+* Update [README.md](README.md)
+
+Replace ```ybedirhanpak/django-boilerplate``` with your repository name at workflow badge urls.
 
 ## Create boilerplate from scratch
 Read [Starter.md](Starter.md)
