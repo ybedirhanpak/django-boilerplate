@@ -150,3 +150,6 @@ dmypy.json
 
 # Editor settings
 .vscode
+
+# OS
+.DS_Store
