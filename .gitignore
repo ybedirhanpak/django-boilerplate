@@ -153,3 +153,6 @@ dmypy.json
 
 # OS
 .DS_Store
+
+# Secrets
+key/
