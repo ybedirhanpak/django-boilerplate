@@ -26,3 +26,9 @@ spec:
               cpu: "500m"
           ports:
             - containerPort: 8080
+          env:
+            - name: GKE_HOST
+              valueFrom:
+                secretKeyRef:
+                  name: django-boilerplate-secret
+                  key: gke_host
