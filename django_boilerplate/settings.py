@@ -12,6 +12,8 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 
 from pathlib import Path
 
+import os
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve(strict=True).parent.parent
 
@@ -27,6 +29,11 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+# Add kubernetes service/ingress host to ALLOWED_HOSTS
+GKE_HOST = os.getenv('GKE_HOST')
+
+if GKE_HOST:
+    ALLOWED_HOSTS += [GKE_HOST]
 
 # Application definition
 
