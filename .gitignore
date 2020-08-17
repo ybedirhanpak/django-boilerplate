@@ -156,3 +156,6 @@ dmypy.json
 
 # Secrets
 key/
+
+# Static files
+staticfiles/
