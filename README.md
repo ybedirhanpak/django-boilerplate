@@ -10,7 +10,7 @@ Django Boilerplate provides common needs of a django based REST API and CI/CD se
 ## Use this template
 
 ### Create your repository
-Create **Use this template** button on this repository and enter your repository name, done.
+Select **Use this template** button on this repository and enter your repository name, done.
 
 ### Update GitHub Actions
 * **[.github/workflows/docker-image.yml](.github/workflows/docker-image.yml)**
