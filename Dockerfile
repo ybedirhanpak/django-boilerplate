@@ -31,5 +31,8 @@ ADD . $APP_ROOT
 
 EXPOSE 8080
 
+# Collect static files
+RUN python3 manage.py collectstatic --no-input
+
 # Start Server
 CMD ["gunicorn", "--bind", ":8080", "--workers", "3", "django_boilerplate.wsgi:application"]
