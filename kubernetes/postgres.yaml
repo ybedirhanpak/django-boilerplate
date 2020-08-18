@@ -36,7 +36,7 @@ spec:
               valueFrom:
                 secretKeyRef:
                   name: django-boilerplate-secret
-                  key: postgres_db_name
+                  key: postgres_name
 
 ---
 apiVersion: v1
