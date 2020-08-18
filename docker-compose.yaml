@@ -1,0 +1,42 @@
+version: "3"
+
+services:
+  postgres:
+    image: postgres
+    environment:
+      - POSTGRES_PORT=5432
+      - POSTGRES_USER=django-boilerplate
+      - POSTGRES_PASSWORD=django-boilerplate
+      - POSTGRES_DB=django-boilerplate
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    ports:
+      - 5432:5432
+    networks:
+      - net
+  django-boilerplate:
+    build: .
+    command: ./docker/run.sh
+    depends_on:
+      - postgres
+    environment:
+      - APP_DEBUG=True
+      - ENV=development
+      # Delete below if you don't want to use postgres
+      - APP_POSTGRES_HOST=postgres
+      - APP_POSTGRES_PORT=5432
+      - APP_POSTGRES_NAME=django-boilerplate
+      - APP_POSTGRES_USER=django-boilerplate
+      - APP_POSTGRES_PASSWORD=django-boilerplate
+      # Delete above if you don't want to use postgres
+    ports:
+      - 8000:8080
+    networks:
+      - net
+
+networks:
+  net:
+    driver: overlay
+
+volumes:
+  postgres_data: {}
