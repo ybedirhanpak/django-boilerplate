@@ -7,6 +7,38 @@
 
 Django Boilerplate provides common needs of a django based REST API and CI/CD setup.
 
+# Run on your local
+
+Recommended way of running local server is using `docker-compose up`. It will install all python and system dependencies inside the container and run local server with live reload. You can configure it to use/not use PostgreSQL, o/w it uses SQLite.
+
+## Interact with container
+With these command you can run executables in your container:
+
+```
+docker-compose exec <service-name> <executable>
+```
+
+* **Create superuser**
+```
+docker-compose exec django-boilerplate ./manage.py createsuperuser
+```
+
+* **Open python shell**
+```
+docker-compose exec django-boilerplate ./manage.py shell
+```
+
+You can also run with `python3 manage.py runserver`, but you may need to install some of these packages:
+
+```
+gcc
+libffi-dev
+jpeg-dev
+zlib-dev
+libjpeg
+postgresql-dev
+```
+
 # Use this template
 
 ### Create your repository
@@ -46,6 +78,7 @@ These secrets are required for proper GKE CD setup as you can see at **[.github/
 ## Development Secrets
 
 You can create `.env` file and store your environment variables there. This file won't be pushed to your repository.
+Environment variables in `.env` will override all others, including the docker-compose.yaml.
 
 ## Kubernetes Secrets
 
