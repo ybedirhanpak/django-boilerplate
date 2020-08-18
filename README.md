@@ -9,7 +9,7 @@ Django Boilerplate provides common needs of a django based REST API and CI/CD se
 
 # Run on your local
 
-Recommended way of running local server is using `docker-compose up`. It will install all python and system dependencies inside the container and run local server with live reload. You can configure it to use/not use PostgreSQL, o/w it uses SQLite.
+Recommended way of running local server is using `docker-compose up`. It will install all python and system dependencies inside the container and run local server with live reload. You can configure it to use/not use PostgreSQL. PostgreSQL and SQLite are only options for now.
 
 ## Interact with container
 With these command you can run executables in your container:
