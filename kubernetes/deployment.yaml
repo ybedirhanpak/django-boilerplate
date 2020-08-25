@@ -49,3 +49,13 @@ spec:
                 secretKeyRef:
                   name: django-boilerplate-secret
                   key: postgres_password
+            - name: APP_EMAIL_HOST_USER
+              valueFrom:
+                secretKeyRef:
+                  name: django-boilerplate-secret
+                  key: email_host_user
+            - name: APP_EMAIL_HOST_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: django-boilerplate-secret
+                  key: email_host_password
