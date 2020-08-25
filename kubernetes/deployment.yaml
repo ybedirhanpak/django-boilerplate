@@ -27,6 +27,8 @@ spec:
           ports:
             - containerPort: 8080
           env:
+            - name: APP_DEBUG
+              value: "True"
             - name: APP_ENVIRONMENT
               value: "staging"
             - name: APP_POSTGRES_HOST
