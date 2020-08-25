@@ -21,7 +21,7 @@ services:
       - postgres
     environment:
       - APP_DEBUG=True
-      - ENV=development
+      - APP_ENVIRONMENT=development
       # Delete below if you don't want to use postgres
       - APP_POSTGRES_HOST=postgres
       - APP_POSTGRES_PORT=5432
@@ -29,6 +29,8 @@ services:
       - APP_POSTGRES_USER=django-boilerplate
       - APP_POSTGRES_PASSWORD=django-boilerplate
       # Delete above if you don't want to use postgres
+      - APP_EMAIL_HOST_USER=your-gmail-address
+      - APP_EMAIL_HOST_PASSWORD=your-gmail-password
     ports:
       - 8000:8080
     networks:
