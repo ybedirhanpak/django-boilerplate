@@ -13,6 +13,9 @@ gunicorn = "^20.0.4"
 whitenoise = "^5.2.0"
 psycopg2-binary = "^2.8.5"
 python-dotenv = "^0.14.0"
+django-rest-auth = {extras = ["with_social"], version = "^0.9.5"}
+djangorestframework-jwt = "^1.11.0"
+django-cors-headers = "^3.5.0"
 
 [tool.poetry.dev-dependencies]
 pytest = "^6.0.1"
