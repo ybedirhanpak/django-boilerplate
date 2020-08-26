@@ -3,4 +3,4 @@ kind: ConfigMap
 metadata:
   name: django-boilerplate-configmap
 data:
-  postgres_host: postgres-service
+  postgres_port: "5432"
