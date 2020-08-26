@@ -4,7 +4,6 @@ resources:
 - kubernetes/config.yaml
 - kubernetes/deployment.yaml
 - kubernetes/service.yaml
-- kubernetes/postgres.yaml
 images:
 - name: django-image
   newName: replace-with-kustomize
