@@ -33,9 +33,14 @@ spec:
               value: "staging"
             - name: APP_POSTGRES_HOST
               valueFrom:
+                secretKeyRef:
+                  name: django-boilerplate-secret
+                  key: postgres_host
+            - name: APP_POSTGRES_PORT
+              valueFrom:
                 configMapKeyRef:
                   name: django-boilerplate-configmap
-                  key: postgres_host
+                  key: postgres_port
             - name: APP_POSTGRES_NAME
               valueFrom:
                 secretKeyRef:
