@@ -104,7 +104,12 @@ metadata:
   name: <secret-name>
 type: Opaque
 data:
-  <key-1>: <base64-value>
+  postgres_host: <base64 value>
+  postgres_name: <base64 value>
+  postgres_user: <base64 value>
+  postgres_password: <base64 value>
+  email_host_user: <base64 value>
+  email_host_password: <base64 value>
 ```
 
 You need to store your values in base64 format. You can conver string to base64 with:
