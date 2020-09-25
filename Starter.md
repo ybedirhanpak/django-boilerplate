@@ -29,7 +29,8 @@
 ### Add dependencies
 ``` poetry add django ```
 ### Initialize git
-``` git init 
+``` 
+git init 
 git add .
 git commit -m "Create django project"
 git remote add origin <repository-url>
