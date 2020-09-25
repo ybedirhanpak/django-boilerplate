@@ -16,17 +16,17 @@
 ``` python3 -m django --version ```
 ### Create a django project
 ``` django-admin startproject django_boilerplate ```
-### Deactivate virtual environment
+### Deactivate virtual environment
 ``` deactivate ```
 ### Go into project directory
 ``` cd django-boilerplate ```
-### Initialize poetry in project
+### Initialize poetry in project
 ``` poetry init -n ```
 ### Activate poetry virtual environment
 ``` poetry shell ```
 ### Make sure virtual environment is activated
 ``` which python ```
-### Add dependencies
+### Add dependencies
 ``` poetry add django ```
 ### Initialize git
 ``` git init 
