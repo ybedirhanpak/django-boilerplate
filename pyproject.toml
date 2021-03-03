@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "django_boilerplate"
+name = "django-boilerplate"
 version = "0.1.0"
 description = ""
 authors = ["Yahya Bedirhan Pak <y.bedirhanpak@gmail.com>"]

@@ -37,4 +37,4 @@ EXPOSE 8080
 RUN python3 manage.py collectstatic --no-input
 
 # Start Server
-CMD ["gunicorn", "--bind", ":8080", "--workers", "3", "django_boilerplate.wsgi:application"]
+CMD ["gunicorn", "--bind", ":8080", "--workers", "3", "app_django.wsgi:application"]
