@@ -5,7 +5,7 @@ description = ""
 authors = ["Yahya Bedirhan Pak <y.bedirhanpak@gmail.com>"]
 
 [tool.poetry.dependencies]
-python = "^3.8"
+python = "^3.9.1"
 django = "^3.1"
 pytest-django = "^3.9.0"
 djangorestframework = "^3.11.1"
