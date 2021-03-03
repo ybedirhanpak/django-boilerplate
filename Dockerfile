@@ -14,6 +14,8 @@ RUN set -ex \
     jpeg-dev \
     zlib-dev \
     libjpeg \
+    openssl-dev \
+    cargo \
     postgresql-dev \
     build-base \
     && python -m pip install --upgrade pip \
