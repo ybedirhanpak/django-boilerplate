@@ -6,12 +6,12 @@
 # Your app name must match your repository name
 # This will assume that your repository is at github.com/$GITHUB_USERNAME/$APP_NAME
 
-# Enter your github username
-GITHUB_USERNAME=username
-# Enter your application name that will be also repository name
-APP_NAME=app-name
-# Enter your application name as a label
-APP_LABEL="App Label"
+# Enter your github username. Example: ybedirhanpak
+GITHUB_USERNAME=
+# Enter your application name that will be also repository name. Example: django-boilerplate
+APP_NAME=
+# Enter your application name as a label. Example (don't forget double quotes): "Django Boilerplate"
+APP_LABEL=
 
 # Control for variables
 
