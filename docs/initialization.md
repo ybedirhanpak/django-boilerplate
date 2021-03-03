@@ -1,4 +1,4 @@
-## Create django_boilerplate from scratch
+## Create django application from scratch
 
 ### Install python
 ``` brew install python ```
@@ -15,7 +15,7 @@
 ### Check django version
 ``` python3 -m django --version ```
 ### Create a django project
-``` django-admin startproject django_boilerplate ```
+``` django-admin startproject django_app_name ```
 ### Deactivate virtual environment
 ``` deactivate ```
 ### Go into project directory
