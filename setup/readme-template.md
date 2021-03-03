@@ -30,7 +30,7 @@ docker-compose exec django-boilerplate ./manage.py shell
 
 ## Run this project without docker-compose
 
-### Prepare poetry
+### Prepare poetry
 
 - Install poetry
 
