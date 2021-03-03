@@ -38,13 +38,10 @@ fi
 # Replace all occurences of "django-boilerplate" with $APP_NAME in yaml ,toml files and readme-template
 find . -name '*.yaml' -exec sed -i '' -e "s/django-boilerplate/$APP_NAME/g" {} \;
 find . -name '*.toml' -exec sed -i '' -e "s/django-boilerplate/$APP_NAME/g" {} \;
-find . -name 'readme-template.md' -exec sed -i '' -e "s/django-boilerplate/$APP_NAME/g" {} \;
+find . -name '*.md' -exec sed -i '' -e "s/django-boilerplate/$APP_NAME/g" {} \;
 
 # Replace all occurences of old github repo name with new github repo name in md files
-OLD_GITHUB_REPO="ybedirhanpak\/django-boilerplate"
-NEW_GITHUB_REPO="$GITHUB_USERNAME\/$APP_NAME"
-
-find . -name '*.md' -exec sed -i '' -e "s/$OLD_GITHUB_REPO/$NEW_GITHUB_REPO/g" {} \;
+find . -name '*.md' -exec sed -i '' -e "s/ybedirhanpak/$GITHUB_USERNAME/g" {} \;
 
 # Replace app-label with $APP_LABEL
 find . -name '*.md' -exec sed -i '' -e "s/app-label/$APP_LABEL/g" {} \;
@@ -52,6 +49,6 @@ find . -name '*.md' -exec sed -i '' -e "s/app-label/$APP_LABEL/g" {} \;
 # Move readme template to README.md
 find . -name 'readme-template.md' -exec cp  {} './README.md' \;
 
-# Remove setup files
+# # Remove setup files
 rm -rf setup
 rm ./setup.sh
