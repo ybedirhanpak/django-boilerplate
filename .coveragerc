@@ -1,9 +1,9 @@
 [run]
 source =
-    django_boilerplate
+    app_django
 
 omit =
     **/migrations/**
-    django_boilerplate/asgi.py
-    django_boilerplate/settings.py
-    django_boilerplate/wsgi.py
+    app_django/asgi.py
+    app_django/settings.py
+    app_django/wsgi.py
